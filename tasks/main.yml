@@ -1,4 +1,8 @@
 ---
+- name: update apt cache
+  apt: update_cache=yes
+  tags: apt
+
 - name: be sure npt is installed
   apt: name=ntp state=present
   tags: ntp
